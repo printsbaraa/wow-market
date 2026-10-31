@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-tajawal: 'Tajawal', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-ibm: 'IBM Plex Sans Arabic', sans-serif;
+  
+  --primary: #168447;
+  --primary-dark: #105B34;
+  --primary-light: #E7F6ED;
+  --primary-accent: #B9E8C7;
+  --background: #FAFBF8;
+  --surface: #FFFFFF;
+  --foreground: #18251D;
+  --muted: #78847B;
+  --border: #E5ECE7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-tajawal), var(--font-inter), system-ui, -apple-system, sans-serif;
+  background-color: #FAFBF8;
+  color: #18251D;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #FAFBF8;
+}
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--font-tajawal), 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F4F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5CD;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #168447;
+}
+
+/* Apple-minimal glass utility */
+.glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 236, 231, 0.8);
+}
+
+.glass-dark {
+  background: rgba(16, 91, 52, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Category tile hover transition */
+.category-card-hover {
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.category-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(22, 132, 71, 0.15);
+}
+
+/* Product card hover effect */
+.product-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -6px rgba(16, 91, 52, 0.1);
+}

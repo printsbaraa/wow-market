@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="wowGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#168447" />
+      <stop offset="100%" stop-color="#105B34" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Badge -->
+  <rect x="10" y="10" width="60" height="60" rx="18" fill="url(#wowGreen)" />
+  <text x="40" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">W</text>
+  <circle cx="56" cy="24" r="5" fill="#B9E8C7" />
+  
+  <!-- Text: WoW Market -->
+  <text x="82" y="38" font-family="'Tajawal', 'Inter', sans-serif" font-weight="900" font-size="22" fill="#18251D">واو ماركت</text>
+  <text x="82" y="58" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#168447" letter-spacing="1.5">WOW MARKET</text>
+  <text x="180" y="58" font-family="'Tajawal', sans-serif" font-weight="500" font-size="11" fill="#78847B">الزرقاء • 2017</text>
+</svg>
